@@ -1,0 +1,52 @@
+$yellow: #ffdc19;
+$yellow-hover: #fff119;
+$green_medium: #43982b;
+$green_dark: #134809;
+$green_text-light: #8ac952;
+$green_text-medium: #78be40;
+$green_text-dark: #57a638;
+$bg_dark: #242425;
+$white: #ffffff;
+$grey: #efefef;
+$light-grey: #f5f5f5;
+$dark-grey: #39393b;
+
+$grad_green_dark1: #63b446;
+$grad_green_dark2: #459c2b;
+$grad_green_light1: #82c546;
+$grad_green_light2: #64b12b;
+
+$grad_grey1: #5b5b5d;
+$grad_grey2: #3e3e3f;
+
+
+$grad_blue1: #4269c3;
+$grad_blue2: #284aae;
+
+$slider_blue1: #2e4ead;
+$slider_blue2: #355bb8;
+$slider_blue3: #4167bd;
+
+$slider_grey1: #3f3f41;
+$slider_grey2: #4a4b4c;
+
+$red: #ff0000;
+
+@mixin roboto($weight: 400, $size: 16px, $color: rgba(255, 255, 255, 1), $lHeight: 30px) {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+  line-height: $lHeight;
+}
+
+@mixin trans($duration: 0.3s) {
+  transition: all $duration ease-in-out;
+}
+
+@mixin center($x: 50%, $y: 50%) {
+  position: absolute;
+  top: $y;
+  right: $x;
+  transform: translate(-50%, -50%);
+}
