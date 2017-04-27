@@ -1,39 +1,14 @@
-$yellow: #ffdc19;
-$yellow-hover: #fff119;
-$green_medium: #43982b;
-$green_dark: #134809;
-$green_text-light: #8ac952;
-$green_text-medium: #78be40;
-$green_text-dark: #57a638;
-$bg_dark: #242425;
-$white: #ffffff;
-$grey: #efefef;
-$light-grey: #f5f5f5;
-$dark-grey: #39393b;
-
-$grad_green_dark1: #63b446;
-$grad_green_dark2: #459c2b;
-$grad_green_light1: #82c546;
-$grad_green_light2: #64b12b;
-
-$grad_grey1: #5b5b5d;
-$grad_grey2: #3e3e3f;
+$white: white;
+$text-color: rgb(66, 65, 67);
+$green-header: rgba(170, 194, 44, 0.7);
+$blue1: #9bd4dc;
+$blue2: #d2ecef;
+$logo-bg: rgba(215, 205, 185, 0.83);
 
 
-$grad_blue1: #4269c3;
-$grad_blue2: #284aae;
 
-$slider_blue1: #2e4ead;
-$slider_blue2: #355bb8;
-$slider_blue3: #4167bd;
-
-$slider_grey1: #3f3f41;
-$slider_grey2: #4a4b4c;
-
-$red: #ff0000;
-
-@mixin roboto($weight: 400, $size: 16px, $color: rgba(255, 255, 255, 1), $lHeight: 30px) {
-  font-family: 'Roboto', 'Arial', sans-serif;
+@mixin opensans($weight: 400, $size: 16px, $color: $text-color, $lHeight: 20px) {
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: $weight;
   font-size: $size;
   color: $color;
@@ -49,4 +24,10 @@ $red: #ff0000;
   top: $y;
   right: $x;
   transform: translate(-50%, -50%);
+}
+
+@mixin inlineCenter($x: center, $y: middle) {
+  display: inline-block;
+  text-align: $x;
+  vertical-align: $y;
 }

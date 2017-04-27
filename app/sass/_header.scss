@@ -1,0 +1,63 @@
+.header {
+  background: url('../img/header_bg.jpg') no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 1050px;
+  position: relative;
+}
+
+.header__text-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 262px;
+  background: $green-header;
+  color: $white;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 50px 60px;
+  line-height: 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.logo-block {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 298px;
+  height: 300px;
+  transform: translate(-50%, 0);
+  font-size: 0;
+
+}
+
+.logo-block__left-text {
+  @include inlineCenter();
+  color: $text-color;
+  width: 50%;
+  font-size: 28px;
+  line-height: 50px;
+  background: $blue1;
+}
+
+.logo-block__right-text {
+  @include inlineCenter();
+  color: $text-color;
+  width: 50%;
+  font-size: 28px;
+  line-height: 50px;
+  background: $blue2;
+}
+
+.logo-block__logo {
+  display: block;
+  position: relative;
+  background-image: url('../img/logo.png');
+  height: 258px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
