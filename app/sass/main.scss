@@ -1,6 +1,10 @@
 @import 'helpers';
 @import 'header';
 @import 'contact-form';
+@import 'second-block';
+@import 'pros';
+@import 'person-block';
+@import 'social';
 
 
 
@@ -9,8 +13,61 @@ body {
   @include opensans();
 }
 
-.container {
-  padding: 0 100px;
+input,
+button {
+  outline: none;
+}
+
+.clearfix {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 39px;
+  line-height: 80px;
+  padding: 0 40px;
+  border: none;
+  background: $green-button;
+}
+
+.button_blue {
+ background: $blue1;
+}
+
+@media (max-width: $l) { // 992-1280px
+  .button {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: $m) { // 769-991px
+
+}
+
+@media (max-width: $s) { // 375-768px
+  body {
+    @include opensans(400, 16px, $text-color, 20px);
+  }
+
+  .button {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 13px;
+  }
 }
 
 
