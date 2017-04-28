@@ -1,0 +1,157 @@
+.pros {
+  background: $pros-bg;
+  height: auto;
+  position: absolute;
+  top: -10vw;
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 80px 115px 60px 115px;
+}
+
+.pros::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  height: 50px;
+  background: url('../img/shadow.png') no-repeat center;
+  background-size: 100% 50px;
+}
+
+.pros__icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.pros__icon-item {
+  width: 23%;
+  padding-top: 180px;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.pros__icon-1 {
+  background-image: url('../img/icon_1.png');
+}
+
+.pros__icon-2 {
+  background-image: url('../img/icon_2.png');
+}
+
+.pros__icon-3 {
+  background-image: url('../img/icon_3.png');
+}
+
+.pros__icon-4 {
+  background-image: url('../img/icon_4.png');
+}
+
+.pros__icon-title {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+.pros__icon-title_special {
+  color: $blue-title;
+}
+
+.pros__desc {
+  width: 52%;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 55px;
+  margin-bottom: 92px;
+}
+
+.pros__btn-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.pros__btn-section button:last-child {
+  margin-right: 50px;
+}
+
+.pros__btn-section:before {
+  content: '';
+  position: absolute;
+  left: -84px;
+  top: -38px;
+  width: 142px;
+  height: 142px;
+  background: url(../img/heart.png) no-repeat center;
+  z-index: -1;
+}
+
+
+@media (max-width: $l) { // 992-1280px
+  .pros__desc {
+    width: 75%;
+  }
+}
+
+@media (max-width: $m) { // 769-991px
+  .pros {
+    padding: 80px 15px 60px 15px;
+  }
+
+  .pros__icon-title, .pros__icon-title_special {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+}
+
+@media (max-width: $s) { // 375-768px
+  .pros {
+    padding: 30px 23px;
+  }
+
+  .pros__icons {
+    flex-wrap: wrap;
+    order: 3;
+    margin-bottom: 0;
+  }
+
+  .pros__icon-item {
+    width: 45%;
+    margin-bottom: 30px;
+    background-size: 72px;
+    padding-top: 100px;
+  }
+
+  .pros__desc {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 37px;
+  }
+
+
+  .pros__btn-section {
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .pros__btn-section button:last-child {
+    margin-right: 20px;
+  }
+
+  .pros__btn-section::before {
+    left: -34px;
+    top: -17px;
+    width: 55px;
+    height: 55px;
+    background-size: contain;
+  }
+}

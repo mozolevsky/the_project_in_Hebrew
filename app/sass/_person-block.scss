@@ -1,0 +1,67 @@
+.person {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 88%;
+  height: auto;
+}
+
+.person__img-block {
+  width: 25%;
+  margin-left: 60px;
+}
+
+.person__img {
+  width: 100%;
+  height: auto;
+}
+
+.person__desc-block {
+  width: 65%;
+}
+
+.person__title {
+  font-size: 65px;
+  line-height: 78px;
+}
+
+.person__desc {
+  font-size: 35px;
+  line-height: 56px;
+}
+
+
+@media (max-width: $l) { // 992-1280px
+
+}
+
+@media (max-width: $m) { // 769-991px
+
+}
+
+@media (max-width: $s) { // 375-768px
+ .person {
+   flex-direction: column;
+   align-items: center;
+ }
+
+  .person__img-block {
+    width: 31%;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .person__desc-block {
+    text-align: center;
+  }
+
+  .person__title {
+    @include mobileTitle();
+  }
+
+  .person__desc {
+    @include mobileText();
+  }
+}

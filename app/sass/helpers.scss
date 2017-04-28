@@ -1,18 +1,41 @@
+
+// colors
 $white: white;
+$pros-bg: rgba(255, 255, 255, 0.6);
 $text-color: rgb(66, 65, 67);
 $green-header: rgba(170, 194, 44, 0.7);
+$green-button: #b9df40;
 $blue1: #9bd4dc;
 $blue2: #d2ecef;
 $logo-bg: rgba(215, 205, 185, 0.83);
+$skin: #fbf0da;
+$blue-title: #004f70;
 
 
 
-@mixin opensans($weight: 400, $size: 16px, $color: $text-color, $lHeight: 20px) {
+  //grid break-points
+$l: 1280px;
+$m: 992px;
+$s: 768px;
+
+
+@mixin opensans($weight: 400, $size: 30px, $color: $text-color, $lHeight: 36px) {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: $weight;
   font-size: $size;
   color: $color;
   line-height: $lHeight;
+}
+
+@mixin mobileTitle () {
+  font-size: 22px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+@mixin mobileText () {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @mixin trans($duration: 0.3s) {
