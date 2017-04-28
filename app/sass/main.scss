@@ -1,11 +1,16 @@
 @import 'helpers';
 @import 'header';
+@import 'contact-form';
 
 
 
 body {
   direction: rtl;
   @include opensans();
+}
+
+.container {
+  padding: 0 100px;
 }
 
 
