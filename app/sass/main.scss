@@ -1,5 +1,6 @@
 @import 'helpers';
 @import 'header';
+@import 'contact-form';
 @import 'second-block';
 @import 'pros';
 @import 'person-block';
@@ -7,11 +8,23 @@
 @import 'person-block';
 @import 'accrdion-block';
 @import 'reviews';
+@import 'social';
 
 
 body {
   direction: rtl;
   @include opensans();
+}
+
+input,
+button {
+  outline: none;
+}
+
+.clearfix {
+  display: table;
+  content: '';
+  clear: both;
 }
 
 a:hover {
@@ -38,7 +51,6 @@ a:hover {
  background: $blue1;
 }
 
-
 @media (max-width: $l) { // 992-1280px
   .button {
     padding: 0 20px;
@@ -60,4 +72,5 @@ a:hover {
     padding: 0 13px;
   }
 }
+
 
