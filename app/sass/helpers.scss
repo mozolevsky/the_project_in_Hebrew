@@ -11,12 +11,17 @@ $logo-bg: rgba(215, 205, 185, 0.83);
 $skin: #fbf0da;
 $blue-title: #004f70;
 
+$orange: #f4c971;
+$pink: #ff97d6;
+
+
 
 
   //grid break-points
 $l: 1280px;
 $m: 992px;
 $s: 768px;
+$xs: 480px;
 
 
 @mixin opensans($weight: 400, $size: 30px, $color: $text-color, $lHeight: 36px) {
