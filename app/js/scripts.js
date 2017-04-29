@@ -42,3 +42,24 @@ $( window ).resize(function() {
      prevButton: '.reviews__left-arrow',
      spaceBetween: 30
  });
+
+ // video
+
+ /* video */
+
+ document.body.addEventListener('click', function (e) {
+     var target = e.target;
+
+     if (target.className == 'videocover' || target.parentNode.className == 'videocover') {
+         var video = target.parentElement.parentElement.querySelector('.video-container__video');
+         var cover = target.parentElement.parentElement.querySelector('.videocover');
+
+         if (video.getAttribute("data-control") !== null) {
+             console.log('Тут нужно скрыть контролы');
+         } else {
+             video.setAttribute("controls", true);
+         }
+         video.play();
+         cover.setAttribute("style", 'visibility: hidden');
+     }
+ });

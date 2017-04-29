@@ -12,22 +12,24 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 262px;
-  background: $green-header;
-  color: $white;
+  width: 13%;
+  height: 20%;
+  line-height: 100%;
+  background: rgba(170, 194, 44, 0.7);
+  color: white;
   font-weight: bold;
-  font-size: 40px;
-  padding: 50px 60px;
-  line-height: 30px;
+  font-size: 1.9vw;
+  display: flex;
+  align-items: center;
   text-align: center;
-  box-sizing: border-box;
+  padding: 0 1%;
 }
 
 .logo-block {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 298px;
+  width: 15.5%;
   height: 300px;
   transform: translate(-50%, 0);
   font-size: 0;
@@ -67,14 +69,15 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 256px;
-  height: 220px;
+  width: 13%;
+  height: 20%;
   background: url('../img/burger-nav.png') no-repeat center;
+  background-size: contain;
 }
 
 .header__txt {
   position: absolute;
-  top: 290px;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, 0);
   color: $white;
@@ -83,40 +86,27 @@
 
 .header__txt-first {
   display: inline-block;
-  font-size: 73px;
-  line-height: 74px;
+  font-size: 3.3vw;
+  line-height: normal;
   border-bottom: 3px solid $white;
   margin: 0;
 }
 
 .header__txt-second {
-  font-size: 88px;
-  line-height: 103px;
+  font-size: 4.4vw;
+  line-height: 6vw;
   margin: 0;
 }
 
 .header__txt-third {
-  font-size: 79px;
-  line-height: 80px;
+  font-size: 4.2vw;
+  line-height: 5vw;
   margin: 0;
 }
 
 
 @media (max-width: $l) { // 992-1280px
-  .header__txt-first {
-    font-size: 53px;
-    line-height: 64px;
-   }
 
-  .header__txt-second {
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  .header__txt-third {
-    font-size: 60px;
-    line-height: 60px;
-  }
 }
 
 @media (max-width: $m) { // 769-991px
@@ -125,6 +115,7 @@
     font-size: 25px;
     padding: 20px 4.5%;
     line-height: normal;
+    height: auto;
   }
 
   .logo-block {
@@ -175,7 +166,7 @@
   }
 
   .header__txt {
-    top: 12vw;
+    top: 9vw;
   }
 
   .header__txt-first {

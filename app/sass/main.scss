@@ -51,6 +51,45 @@ a:hover {
  background: $blue1;
 }
 
+.video-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.video-container__video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.videocover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0; }
+
+.videocover:hover {
+  cursor: pointer;
+}
+
+.video-container__button {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 113px;
+  height: 113px;
+  background: url('../img/play-button.png') no-repeat center;
+  border: none;
+}
+
+.video-container__button_main {
+  top: 70%;
+}
+
 @media (max-width: $l) { // 992-1280px
   .button {
     padding: 0 20px;
@@ -58,7 +97,9 @@ a:hover {
 }
 
 @media (max-width: $m) { // 769-991px
-
+  .video-container__button_main {
+    top: 65%;
+  }
 }
 
 @media (max-width: $s) { // 375-768px
@@ -71,6 +112,19 @@ a:hover {
     line-height: 30px;
     padding: 0 13px;
   }
+
+  .video-container__button {
+    background: url('../img/play-button_min.png') no-repeat center;
+    width: 39px;
+    height: 39px;
+  }
+}
+
+@media (max-width: $xs) {
+  .video-container__button {
+    top: 69%;
+  }
+
 }
 
 
