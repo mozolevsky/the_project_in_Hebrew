@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="libs/easy-responsive-tabs/easy-responsive-tabs.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
 </head>
@@ -28,14 +29,91 @@
         <p> חלק א׳ - חינוך לאחריות ולעצמאות</p>
     </div>
 </header>
+
 <div class="number-block pink-light70">
     <div class="number-block__title">הילד לא רוצה לקום בבוקר</div>
     <div class="number-block__number">29</div>
 </div>
-<div class="number-block number-block_info pink-light70">
-    <div class="number-block__title_info">לצפיה בכל כרטיסיות ילדות</div>
-    <div class="number-block__number_info pink"></div>
+
+<div class="video-gallery container-wrap pink-light35">
+    <div id="verticalTab">
+        <ul class="resp-tabs-list">
+            <li>
+                <span class="video-gallery__tab-name">כותרת סרטון 1</span>
+                <img src="img/video_preview.png" class="video-gallery__tab-video-preview">
+            </li>
+            <li>
+                <span class="video-gallery__tab-name">כותרת סרטון 2</span>
+                <img src="img/video_preview.png" class="video-gallery__tab-video-preview">
+            </li>
+            <li>
+                <span class="video-gallery__tab-name">כותרת סרטון 3</span>
+                <img src="img/video_preview.png" class="video-gallery__tab-video-preview">
+            </li>
+            <li>
+                <span class="video-gallery__tab-name">כותרת סרטון 4</span>
+                <img src="img/video_preview.png" class="video-gallery__tab-video-preview">
+            </li>
+        </ul>
+        <div class="resp-tabs-container pink-light70">
+            <div>
+                <p class="video-gallery__title-video">כותרת סרטון 1</p>
+                <div class="video-container" >
+                    <div class="videocover">
+                        <button class="video-container__button" type="button"></button>
+                    </div>
+                    <video class="video-container__video">
+                        <source src="video/small.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p class="video-gallery__desc-video">תיאור סרטון</p>
+            </div>
+            <div>
+                <p class="video-gallery__title-video">כותרת סרטון 2</p>
+                <div class="video-container" >
+                    <div class="videocover">
+                        <button class="video-container__button" type="button"></button>
+                    </div>
+                    <video class="video-container__video" >
+                        <source src="video/small2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p class="video-gallery__desc-video">תיאור סרטון</p>
+            </div>
+            <div>
+                <p class="video-gallery__title-video">כותרת סרטון 3</p>
+                <div class="video-container" >
+                    <div class="videocover">
+                        <button class="video-container__button" type="button"></button>
+                    </div>
+                    <video class="video-container__video">
+                        <source src="video/small.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p class="video-gallery__desc-video">תיאור סרטון</p>
+            </div>
+            <div>
+                <p class="video-gallery__title-video">כותרת סרטון 4</p>
+                <div class="video-container" >
+                    <div class="videocover">
+                        <button class="video-container__button" type="button"></button>
+                    </div>
+                    <video class="video-container__video">
+                        <source src="video/small2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p class="video-gallery__desc-video">תיאור סרטון</p>
+            </div>
+        </div>
+    </div>
+    <br />
+
 </div>
+
 <div class="points container-wrap pink-light35">
     <div class="points__item points__item_1">
         <p class="points__item-title">תיאור מצב</p>
@@ -60,6 +138,7 @@
         </ul>
     </div>
 </div>
+
 <div class="accordion__inner">
     <div class="accordion">
         <div class="accordion__wrapper">
@@ -128,12 +207,87 @@
         </div>
     </div>
 </div>
+
+<div class="number-block number-block_info pink-light70">
+    <div class="number-block__title_info">לצפיה בכל כרטיסיות ילדות</div>
+    <div class="number-block__number_info pink"></div>
+</div>
+
 <div class="questions container-wrap pink-light35">
     <div class="number-block pink-light70 clearfix">
         <div class="number-block__title">הילד לא רוצה לקום בבוקר</div>
         <div class="number-block__number"></div>
     </div>
+    <div class="accordion__inner">
+        <div class="accordion">
+            <div class="accordion__wrapper">
+                <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default pink-extraLight">
+                        <div class="panel-heading" role="tab" id="headingOne2">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                                    <i class="accordion__marker accordion__close"></i>
+                                    יסודות הערכה (גישה חופשית)
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne2">
+                            <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default pink-extraLight">
+                        <div class="panel-heading" role="tab" id="headingTwo2">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                                    <i class="accordion__marker accordion__close"></i>
+                                    ינקות
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo2">
+                            <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default pink-extraLight">
+                        <div class="panel-heading" role="tab" id="headingThree2">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                                    <i class="accordion__marker accordion__close"></i>
+                                    ילדות
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree2">
+                            <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default pink-extraLight">
+                        <div class="panel-heading" role="tab" id="headingFour2">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour2" aria-expanded="false" aria-controls="collapseFour2">
+                                    <i class="accordion__marker accordion__close"></i>
+                                    התבגרות
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour2">
+                            <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 <div class="container-wrap pink-light35">
     <div class="inner-contact">
         <h3 class="inner-contact__title">יש לך שאלה נוספת?</h3>
@@ -145,18 +299,39 @@
     </div>
 </div>
 
-
-
-
 <div class="social">
     <a class="social__item social__item_1"></a>
     <a class="social__item social__item_2"></a>
     <a class="social__item social__item_3"></a>
 </div>
 
-<script src="libs/swiper/dist/js/swiper.min.js"></script>
 <script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="libs/swiper/dist/js/swiper.min.js"></script>
+<script src="libs/easy-responsive-tabs/easy-responsive-tabs.js"></script>
 <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#horizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion
+            width: 'auto', //auto or any width like 600px
+            fit: true,   // 100% fit in a container
+            closed: 'accordion', // Start closed if in accordion view
+            activate: function(event) { // Callback function if tab is switched
+                var $tab = $(this);
+                var $info = $('#tabInfo');
+                var $name = $('span', $info);
+                $name.text($tab.text());
+                $info.show();
+            }
+        });
+        $('#verticalTab').easyResponsiveTabs({
+            type: 'vertical',
+            width: 'auto',
+            fit: true
+        });
+    });
+</script>
 </body>
 </html>

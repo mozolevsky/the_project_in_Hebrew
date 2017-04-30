@@ -65,14 +65,15 @@
 /*quetions*/
 .questions .number-block{
   font-size: 40px;
-  line-height: 78px;
+  line-height: 98px;
 }
 
 .questions .number-block__number {
-  min-height: 78px;
+  min-height: 97px;
+  width: 7%;
   background-image: url("../img/inner-question-icon.png");
   background-repeat: no-repeat;
-  background-size: auto 80%;
+  background-size: auto 60%;
   background-position: center;
 }
 

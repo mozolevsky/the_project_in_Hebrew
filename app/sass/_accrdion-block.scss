@@ -117,7 +117,7 @@
 .accordion__inner .panel-title > a {
   padding-right: 90px;
   font-size: 40px;
-  line-height: 58px;
+  line-height: 78px;
   color: $text-color;
 }
 
@@ -130,7 +130,7 @@
 }
 
 .accordion__inner .panel:first-child {
-  border-top: 2px solid $white;
+  /*border-top: 2px solid $white;*/
 }
 
 @media (max-width: $l) { // 992-1280px

@@ -12,7 +12,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     rigger = require('gulp-rigger');
 
-gulp.task('sass', function(){
+gulp.task('sass', function() {
     return gulp.src('app/sass/main.scss')
         .pipe(sass())
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
@@ -97,6 +97,12 @@ gulp.task('build', ['clean', 'img' , 'sass', 'cssMin', 'scripts'], function (){
 
     var buildHtml = gulp.src('app/*.html')
         .pipe(gulp.dest('dist'));
+
+    var buildLibs = gulp.src('app/libs/**/*')
+        .pipe(gulp.dest('dist/libs'));
+
+    var buildVideo = gulp.src('app/video/**/*')
+        .pipe(gulp.dest('dist/video'));
 
     var moveVideo = gulp.src('app/video/*')
         .pipe(gulp.dest('dist'));

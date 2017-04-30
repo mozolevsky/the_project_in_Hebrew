@@ -1,22 +1,39 @@
 
  window.onload = function() {
-    var prosBlock = document.querySelector('.pros').clientHeight;
-    var personBlock = document.querySelector('.person').clientHeight;
+    var prosBlock = document.querySelector('.pros');
+    var personBlock = document.querySelector('.person');
     var secondBlock = document.querySelector('.second-block');
 
     if (prosBlock && personBlock) {
-        secondBlock.style.minHeight = (prosBlock + personBlock ) + 'px';
+        secondBlock.style.minHeight = (prosBlock.clientHeight + personBlock.clientHeight) + 'px';
     }
+
+    var tabsList = document.querySelector('.resp-tabs-list');
+    var tabsContainer = document.querySelector('.resp-tabs-container');
+    console.log(tabsContainer.clientHeight);
+
+
+     if (tabsContainer && tabsList) {
+         tabsList.style.cssText = 'height:' + (tabsContainer.clientHeight + 50) + 'px' ;
+
+     }
 
 };
 
 $( window ).resize(function() {
-    var prosBlock = document.querySelector('.pros').clientHeight;
-    var personBlock = document.querySelector('.person').clientHeight;
+    var prosBlock = document.querySelector('.pros');
+    var personBlock = document.querySelector('.person');
     var secondBlock = document.querySelector('.second-block');
 
     if (prosBlock && personBlock) {
-        secondBlock.style.minHeight = (prosBlock + personBlock ) + 'px';
+        secondBlock.style.minHeight = (prosBlock.clientHeight + personBlock.clientHeight) + 'px';
+    }
+
+    var tabsContainer = document.querySelector('.resp-tabs-container');
+    var tabsList = document.querySelector('.resp-tabs-list');
+
+    if (tabsContainer && tabsList) {
+        tabsList.style.height = tabsContainer.clientHeight + 'px';
     }
 
 });

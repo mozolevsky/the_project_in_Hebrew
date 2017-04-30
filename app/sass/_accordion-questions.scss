@@ -1,0 +1,62 @@
+/* based on bootstrap and _accordion-block styles*/
+
+.questions {
+  padding-top: 92px;
+  padding-bottom: 85px;
+}
+
+.questions .accordion__inner .panel-title > a {
+  line-height: 104px;
+  padding-right: 158px;
+}
+
+.questions .accordion__marker {
+  right: 37px;
+  width: 31px;
+  height: 31px;
+  background-size: contain;
+}
+
+.questions .accordion__close {
+  background: url('../img/pink-play-icon.png') no-repeat center;
+  transform: translateY(-50%);
+}
+
+.questions .accordion__open {
+  background: url('../img/pink-play-icon.png') no-repeat center;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.questions .accordion__inner .panel {
+  border-bottom: 1px solid $question-line;
+}
+
+.questions .accordion__inner .panel:first-child {
+  border-bottom: 1px solid $question-line;
+}
+
+
+
+@media (max-width: $l) { // 992-1280px
+
+}
+
+@media (max-width: $m) { // 769-991px
+
+}
+
+@media (max-width: $s) { // 480-768px
+  .questions .accordion__inner .panel-title > a {
+    padding-right: 70px;
+    line-height: 45px;
+  }
+
+  .questions .accordion__marker {
+    right: 20px;
+  }
+}
+
+@media (max-width: $xs) { // 375-480px
+
+}

@@ -10,7 +10,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 13%;
+  width: 15%;
   height: 20%;
   line-height: 100%;
   background: rgba(170, 194, 44, 0.7);
@@ -73,10 +73,10 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 13%;
+  width: 15%;
   height: 20%;
   background: url("../img/burger-nav.png") no-repeat center;
-  background-size: contain; }
+  background-size: cover; }
 
 .header__txt {
   position: absolute;
@@ -966,7 +966,7 @@
 .accordion__inner .panel-title > a {
   padding-right: 90px;
   font-size: 40px;
-  line-height: 58px;
+  line-height: 78px;
   color: #424143; }
 
 .accordion__inner .panel-title > a:hover {
@@ -976,7 +976,7 @@
   border-bottom: 2px solid white; }
 
 .accordion__inner .panel:first-child {
-  border-top: 2px solid white; }
+  /*border-top: 2px solid $white;*/ }
 
 @media (max-width: 992px) {
   .accordion__marker {
@@ -1163,6 +1163,9 @@
 
 .pink-light35 {
   background-color: rgba(255, 151, 214, 0.35); }
+
+.pink-extraLight {
+  background-color: #ffeff9; }
 
 .points {
   padding-top: 40px;
@@ -1355,13 +1358,14 @@
 /*quetions*/
 .questions .number-block {
   font-size: 40px;
-  line-height: 78px; }
+  line-height: 98px; }
 
 .questions .number-block__number {
-  min-height: 78px;
+  min-height: 97px;
+  width: 7%;
   background-image: url("../img/inner-question-icon.png");
   background-repeat: no-repeat;
-  background-size: auto 80%;
+  background-size: auto 60%;
   background-position: center; }
 
 .questions .number-block__title {
@@ -1497,6 +1501,110 @@
   .inner-contact__title {
     font-size: 22px;
     line-height: 26px; } }
+
+.video-gallery {
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+.video-gallery::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.video-gallery__title-video {
+  position: absolute;
+  top: -70px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 2vw;
+  color: #424143;
+  line-height: 53px; }
+
+.video-gallery__desc-video {
+  position: absolute;
+  bottom: -50px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 2vw;
+  color: #424143;
+  line-height: 53px; }
+
+.video-gallery__tab-name {
+  display: none; }
+
+.video-gallery__tab-video-preview {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px; }
+
+@media (max-width: 1280px) {
+  .video-gallery__title-video {
+    top: -50px; } }
+
+@media (max-width: 768px) {
+  .video-gallery {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100%; }
+  .video-gallery__tab-name {
+    display: block;
+    color: white;
+    font-size: 22px;
+    line-height: 21px;
+    font-weight: bold;
+    line-height: 35px; }
+  .video-gallery__tab-video-preview {
+    display: none; }
+  .video-gallery__title-video {
+    display: none; }
+  .video-gallery__desc-video {
+    display: none; } }
+
+/* based on bootstrap and _accordion-block styles*/
+.questions {
+  padding-top: 92px;
+  padding-bottom: 85px; }
+
+.questions .accordion__inner .panel-title > a {
+  line-height: 104px;
+  padding-right: 158px; }
+
+.questions .accordion__marker {
+  right: 37px;
+  width: 31px;
+  height: 31px;
+  background-size: contain; }
+
+.questions .accordion__close {
+  background: url("../img/pink-play-icon.png") no-repeat center;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.questions .accordion__open {
+  background: url("../img/pink-play-icon.png") no-repeat center;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+      -ms-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%; }
+
+.questions .accordion__inner .panel {
+  border-bottom: 1px solid #424143; }
+
+.questions .accordion__inner .panel:first-child {
+  border-bottom: 1px solid #424143; }
+
+@media (max-width: 768px) {
+  .questions .accordion__inner .panel-title > a {
+    padding-right: 70px;
+    line-height: 45px; }
+  .questions .accordion__marker {
+    right: 20px; } }
 
 body {
   direction: rtl;

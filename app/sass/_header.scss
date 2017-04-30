@@ -12,7 +12,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 13%;
+  width: 15%;
   height: 20%;
   line-height: 100%;
   background: rgba(170, 194, 44, 0.7);
@@ -69,10 +69,10 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 13%;
+  width: 15%;
   height: 20%;
   background: url('../img/burger-nav.png') no-repeat center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .header__txt {
