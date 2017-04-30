@@ -9,6 +9,10 @@
 @import 'accrdion-block';
 @import 'reviews';
 @import 'social';
+@import 'colors';
+@import 'points';
+@import 'number-block';
+@import 'inner-contact';
 
 
 body {
@@ -49,6 +53,11 @@ a:hover {
 
 .button_blue {
  background: $blue1;
+}
+
+.container-wrap {
+  padding-left: 160px;
+  padding-right: 160px;
 }
 
 .video-container {
@@ -94,9 +103,19 @@ a:hover {
   .button {
     padding: 0 20px;
   }
+
+  .container-wrap {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 @media (max-width: $m) { // 769-991px
+  .container-wrap {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
   .video-container__button_main {
     top: 65%;
   }
@@ -113,6 +132,11 @@ a:hover {
     padding: 0 13px;
   }
 
+  .container-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .video-container__button {
     background: url('../img/play-button_min.png') no-repeat center;
     width: 39px;
@@ -124,7 +148,6 @@ a:hover {
   .video-container__button {
     top: 69%;
   }
-
 }
 
 

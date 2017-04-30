@@ -104,9 +104,68 @@
   margin: 0;
 }
 
+.header__title {
+  padding: 20px;
+  padding-top: 0;
+  position: relative;
+  text-align: center;
+  color: $white;
+}
+
+.pink.header__title::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top:-9.90vw;
+  width: 0;
+  height: 0;
+  border-left: 49.2vw solid transparent;
+  border-right: 49.2vw solid transparent;
+  border-bottom: 10vw solid $pink;
+  transform: translateX(-50%);
+}
+
+.pink.header__title::after {
+  content: '';
+  position: absolute;
+  width: 8vw;
+  height: 8.3vw;
+  left: 50%;
+  margin-left: -4vw;
+  top:-8vw;
+  background-image: url("../img/icon_block_icon2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.header__title h1 {
+  font-size: 80px;
+  line-height: 96px;
+  margin: 0;
+}
+
+.header__title p {
+  font-size: 65px;
+  line-height: 78px;
+  margin: 0;
+}
+
 
 @media (max-width: $l) { // 992-1280px
+  .header__txt-third {
+    font-size: 60px;
+    line-height: 60px;
+  }
 
+  .header__title h1 {
+    font-size: 60px;
+    line-height: 76px;
+  }
+
+  .header__title p {
+    font-size: 45px;
+    line-height: 68px;
+  }
 }
 
 @media (max-width: $m) { // 769-991px
@@ -131,8 +190,24 @@
     display: none;
   }
 
+  .logo-block__logo_inner {
+    display: block;
+    width: 150px;
+    margin: 0 auto
+  }
+
   .header__txt {
     top: 93px;
+  }
+
+  .header__title h1 {
+    font-size: 45px;
+    line-height: 61px;
+  }
+
+  .header__title p {
+    font-size: 30px;
+    line-height: 53px;
   }
 }
 
@@ -147,6 +222,10 @@
 
   .logo-block {
     width: 130px;
+  }
+
+  .logo-block__logo_inner {
+    width: 60px;
   }
 
   .logo-block__left-text {
@@ -182,5 +261,15 @@
   .header__txt-third {
     font-size: 29px;
     line-height: 29px;
+  }
+
+  .header__title h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .header__title p {
+    font-size: 25px;
+    line-height: 35px;
   }
 }
