@@ -7,6 +7,19 @@
   background-position: 0 290px;
 }
 
+.points.pink-light35 {
+  background-image: url("../img/inner-img.png");
+}
+
+.points.blue-light35 {
+  background-image: url("../img/blue-inner-img.png");
+  background-position: 0 490px;
+}
+
+.points.yellow-light35 {
+  background-image: url("../img/yellow-inner-img.png");
+}
+
 .points__item-title {
   position: relative;
   font-size: 65px;
@@ -68,6 +81,10 @@
     background-size: 350px;
   }
 
+  .points.blue-light35 {
+    background-position: 0 230px;
+  }
+
   .points__item-title {
     font-size: 45px;
     line-height: 90px;
@@ -119,6 +136,18 @@
   .points {
     padding-top: 10px;
     padding-bottom: 10px;
+    background-image: none;
+  }
+
+  .points.blue-light35 {
+    background-image: none;
+  }
+
+  .points.pink-light35 {
+    background-image: none;
+  }
+
+  .points.yellow-light35 {
     background-image: none;
   }
 

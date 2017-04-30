@@ -40,7 +40,7 @@
   text-align: right;
 }
 
-.number-block__number_info {
+.number-block__number_info.pink {
   position: relative;
   width: 20%;
   background-image: url('../img/icon_block_icon2.png');
@@ -60,6 +60,56 @@
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-right: 15px solid $pink;
+}
+
+/*blue*/
+.number-block__number_info.blue {
+  position: relative;
+  width: 20%;
+  background-image: url('../img/icon_block_icon1.png');
+  background-repeat: no-repeat;
+  background-size: auto 80%;
+  background-position: 20px center;
+}
+
+.number-block__number_info.blue::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  margin-top: -15px;
+  width: 0;
+  height: 15px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid $page-blue-1;
+}
+
+/*yellow*/
+.number-block__number_info.yellow {
+  position: relative;
+  width: 20%;
+  background-image: url('../img/icon_block_icon3.png');
+  background-repeat: no-repeat;
+  background-size: auto 80%;
+  background-position: 20px center;
+  background-color: $yellow-3;
+}
+
+.number-block__number_info.yellow::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  margin-top: -15px;
+  width: 0;
+  height: 15px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #F6D48C;
+}
+.yellow-light70 .number-block__title_info {
+  background-color: $yellow-1;
 }
 
 /*quetions*/
@@ -137,6 +187,32 @@
     border-right: 15px solid $pink;
   }
 
+  .number-block__number_info.blue::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 0;
+    margin-top: 0;
+    width: 0;
+    height: 45px;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-right: 15px solid $page-blue-1;
+  }
+
+  .number-block__number_info.yellow::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 0;
+    margin-top: 0;
+    width: 0;
+    height: 45px;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-right: 15px solid #F6D48C;
+  }
+
   /*quetions*/
   .questions .number-block{
     font-size: 23px;
@@ -195,6 +271,32 @@
     border-top: 17px solid transparent;
     border-bottom: 17px solid transparent;
     border-right: 10px solid #ff97d6;
+  }
+
+  .number-block__number_info.blue::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    margin-top: 0;
+    width: 0;
+    height: 35px;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-right: 10px solid $page-blue-1;
+  }
+
+  .number-block__number_info.yellow::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    margin-top: 0;
+    width: 0;
+    height: 35px;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-right: 10px solid #F6D48C;
   }
 
   /*quetions*/
