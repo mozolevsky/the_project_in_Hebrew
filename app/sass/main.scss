@@ -9,6 +9,10 @@
 @import 'accrdion-block';
 @import 'reviews';
 @import 'social';
+@import 'colors';
+@import 'points';
+@import 'number-block';
+@import 'inner-contact';
 
 
 body {
@@ -51,14 +55,27 @@ a:hover {
  background: $blue1;
 }
 
+.container-wrap {
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
 @media (max-width: $l) { // 992-1280px
   .button {
     padding: 0 20px;
   }
+
+  .container-wrap {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 @media (max-width: $m) { // 769-991px
-
+  .container-wrap {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 @media (max-width: $s) { // 375-768px
@@ -70,6 +87,11 @@ a:hover {
     font-size: 18px;
     line-height: 30px;
     padding: 0 13px;
+  }
+
+  .container-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 

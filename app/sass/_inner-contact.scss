@@ -1,0 +1,42 @@
+.inner-contact {
+  padding: 85px;
+}
+
+.inner-contact__title {
+  margin: 0;
+  @include opensans(400, 65px, $red, 78px);
+  text-align: center;
+}
+
+@media (max-width: $l) {
+  .inner-contact {
+    padding: 55px;
+  }
+
+  .inner-contact__title {
+    font-size: 45px;
+    line-height:58px;
+  }
+}
+
+@media (max-width: $m) {
+  .inner-contact {
+    padding: 35px;
+  }
+
+  .inner-contact__title {
+    font-size: 30px;
+    line-height:44px;
+  }
+}
+
+@media (max-width: $s) {
+  .inner-contact {
+    padding: 15px;
+  }
+
+  .inner-contact__title {
+    font-size: 22px;
+    line-height:26px;
+  }
+}
