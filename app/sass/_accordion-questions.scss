@@ -2,7 +2,6 @@
 
 .questions {
   padding-top: 92px;
-  padding-bottom: 85px;
 }
 
 .questions .accordion__inner .panel-title > a {
@@ -26,6 +25,19 @@
   background: url('../img/pink-play-icon.png') no-repeat center;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: 50% 50%;
+}
+
+
+.questions .accordion__marker_blue {
+  background: url('../img/blue-play-icon.png') no-repeat center;
+}
+
+.questions .accordion__marker_yellow {
+  background: url('../img/yellow-play-icon.png') no-repeat center;
+}
+
+.questions .accordion__marker_green {
+  background: url('../img/green-play-icon.png') no-repeat center;
 }
 
 .questions .accordion__inner .panel {

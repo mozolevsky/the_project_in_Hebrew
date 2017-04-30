@@ -15,11 +15,17 @@
 @import 'inner-contact';
 @import 'video-gallery';
 @import 'accordion-questions';
+@import 'inner-footer';
+@import 'eye-block';
 
 
 body {
   direction: rtl;
   @include opensans();
+}
+
+.txt-dark {
+  color: $text-color;
 }
 
 input,

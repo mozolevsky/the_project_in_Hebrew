@@ -7,6 +7,19 @@
   background-position: 0 290px;
 }
 
+.points.pink-light35 {
+  background-image: url("../img/inner-img.png");
+}
+
+.points.blue-light35 {
+  background-image: url("../img/blue-inner-img.png");
+  background-position: 0 490px;
+}
+
+.points.yellow-light35 {
+  background-image: url("../img/yellow-inner-img.png");
+}
+
 .points__item-title {
   position: relative;
   font-size: 65px;
@@ -45,12 +58,24 @@
   background-image: url("../img/inner-doc-icon.png");
 }
 
+.points__item_1_black .points__item-title::before{
+  background-image: url("../img/inner-doc-icon-black.png");
+}
+
 .points__item_2 .points__item-title::before{
   background-image: url("../img/inner-bad-icon.png");
 }
 
+.points__item_2_black .points__item-title::before{
+  background-image: url("../img/inner-bad-icon-black.png");
+}
+
 .points__item_3 .points__item-title::before{
   background-image: url("../img/inner-good-icon.png");
+}
+
+.points__item_3_black .points__item-title::before{
+  background-image: url("../img/inner-good-icon-black.png");
 }
 
 .points__item-text_list {
@@ -66,6 +91,10 @@
     padding-top: 30px;
     padding-bottom: 30px;
     background-size: 350px;
+  }
+
+  .points.blue-light35 {
+    background-position: 0 230px;
   }
 
   .points__item-title {
@@ -119,6 +148,18 @@
   .points {
     padding-top: 10px;
     padding-bottom: 10px;
+    background-image: none;
+  }
+
+  .points.blue-light35 {
+    background-image: none;
+  }
+
+  .points.pink-light35 {
+    background-image: none;
+  }
+
+  .points.yellow-light35 {
     background-image: none;
   }
 
