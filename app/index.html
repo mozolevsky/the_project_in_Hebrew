@@ -12,7 +12,16 @@
 </head>
 <body dir="rtl">
 <header class="header">
-    <img src="img/header_bg.jpg" alt="" class="header__bg">
+    <!--<img src="img/header_bg.jpg" alt="" class="header__bg">-->
+    <div class="video-container" >
+        <div class="videocover">
+            <button class="video-container__button video-container__button_main" type="button"></button>
+        </div>
+        <video class="video-container__video" data-control="null">
+            <source src="video/small.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
     <div class="header__text-left">זכרמה ילארשיה ואדיול היפרת</div>
     <div class="logo-block">
@@ -228,7 +237,7 @@
                     <button class="button contact-form__btn" type="submit">חלש</button>
                 </form>
             </div>
-            <div class="contact-form__map"></div>
+            <div class="contact-form__map" id="map"></div>
         </div>
     </div>
 </div>
@@ -244,6 +253,26 @@
 
 <script src="libs/swiper/dist/js/swiper.min.js"></script>
 <script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
+
+<script>
+    function initMap() {
+        var uluru = {lat: 31.771959, lng: 35.217018};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 10,
+            center: uluru,
+            mapTypeControl: false,
+            streetViewControl: false
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzBX0Aq_YcXOeiLU35AqbFbYOXObCBYsQ&callback=initMap">
+</script>
 </body>
 </html>
